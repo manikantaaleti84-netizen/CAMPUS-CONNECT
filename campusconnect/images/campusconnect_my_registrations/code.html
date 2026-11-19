@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>CampusConnect - My Registrations</title>
+<!-- Tailwind CSS v3 -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Google Fonts: Inter -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind Configuration -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#F5F3FF',
+              100: '#EDE9FE',
+              200: '#DDD6FE',
+              500: '#8B5CF6',
+              600: '#7C3AED',
+              700: '#6D28D9',
+            },
+          }
+        }
+      }
+    }
+  </script>
+<!-- BEGIN: Custom Styling -->
+<style data-purpose="base-layout">
+    body {
+      background-color: #F8FAFC;
+      color: #1E293B;
+    }
+  </style>
+<!-- END: Custom Styling -->
+</head>
+<body class="min-h-screen flex flex-col antialiased selection:bg-brand-100 selection:text-brand-700">
+<!-- BEGIN: MainHeader -->
+<header class="sticky top-0 z-30 bg-white/90 backdrop-blur-md border-b border-slate-200" data-purpose="site-header">
+<div class="max-w-[1440px] mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
+<!-- Brand Logo -->
+<div class="flex items-center gap-8">
+<a aria-label="CampusConnect Home" class="flex items-center gap-3 group focus:outline-none" href="#">
+<div class="w-10 h-10 rounded-xl bg-brand-600 flex items-center justify-center text-white shadow-sm shadow-brand-500/30 group-hover:bg-brand-700 transition-colors">
+<svg aria-hidden="true" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+<path d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</div>
+<span class="text-xl font-bold tracking-tight text-slate-900">Campus<span class="text-brand-600">Connect</span></span>
+</a>
+<!-- Main Navigation Links -->
+<nav aria-label="Main Navigation" class="hidden md:flex items-center gap-1.5">
+<a class="px-4 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-colors" href="#">
+            Explore
+          </a>
+<!-- Active Tab -->
+<a aria-current="page" class="px-4 py-2 rounded-lg text-sm font-semibold bg-brand-50 text-brand-700 hover:bg-brand-100 transition-colors" href="#">
+            My Registrations
+          </a>
+</nav>
+</div>
+<!-- User Profile Badge -->
+<div class="flex items-center gap-3">
+<div class="flex items-center gap-3 pl-3 pr-4 py-1.5 bg-slate-50 border border-slate-200/80 rounded-full" data-purpose="user-badge">
+<div class="w-8 h-8 rounded-full bg-brand-600 text-white font-semibold text-xs flex items-center justify-center ring-2 ring-white">
+            AM
+          </div>
+<div class="text-left">
+<span class="text-xs font-semibold text-slate-800 block leading-tight">Alex Morgan</span>
+<span class="text-[11px] text-slate-500 font-normal leading-tight">Student</span>
+</div>
+</div>
+</div>
+</div>
+</header>
+<!-- END: MainHeader -->
+<!-- BEGIN: MainContent -->
+<main class="flex-grow max-w-[1440px] w-full mx-auto px-6 lg:px-12 py-10">
+<!-- Active Registrations Section (Frame A) -->
+<section aria-labelledby="active-registrations-heading" class="max-w-4xl mx-auto mb-16" data-purpose="active-registrations-list">
+<!-- Section Title & Badge Count -->
+<div class="flex items-center gap-3 mb-6">
+<h1 class="text-2xl lg:text-3xl font-bold text-slate-900 tracking-tight" id="active-registrations-heading">
+          My Registered Events
+        </h1>
+<span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-brand-100 text-brand-700">
+          2 Active
+        </span>
+</div>
+<!-- Events List -->
+<div class="space-y-4">
+<!-- Registration Card 1 -->
+<article class="bg-white border border-slate-200/90 rounded-2xl p-6 lg:p-7 shadow-sm hover:shadow-md hover:border-slate-300 transition-all duration-200 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+<div class="space-y-2">
+<h2 class="text-xl font-bold text-slate-900 hover:text-brand-600 transition-colors">
+              AI Build Night
+            </h2>
+<div class="flex items-center gap-2 text-sm text-slate-500 font-medium">
+<span class="inline-flex items-center gap-1.5 text-emerald-700">
+<span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+                Status: Open
+              </span>
+<span class="text-slate-300">•</span>
+<span>Registered 12 Nov</span>
+</div>
+</div>
+<!-- Status Badge -->
+<div class="self-start sm:self-center flex-shrink-0">
+<span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-700 border border-emerald-200">
+<svg aria-hidden="true" class="w-3.5 h-3.5 text-emerald-600" fill="none" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24">
+<path d="m4.5 12.75 6 6 9-13.5" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+              Registered
+            </span>
+</div>
+</article>
+<!-- Registration Card 2 -->
+<article class="bg-white border border-slate-200/90 rounded-2xl p-6 lg:p-7 shadow-sm hover:shadow-md hover:border-slate-300 transition-all duration-200 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+<div class="space-y-2">
+<h2 class="text-xl font-bold text-slate-900 hover:text-brand-600 transition-colors">
+              Open Source Jam
+            </h2>
+<div class="flex items-center gap-2 text-sm text-slate-500 font-medium">
+<span class="inline-flex items-center gap-1.5 text-emerald-700">
+<span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+                Status: Open
+              </span>
+<span class="text-slate-300">•</span>
+<span>Registered 13 Nov</span>
+</div>
+</div>
+<!-- Status Badge -->
+<div class="self-start sm:self-center flex-shrink-0">
+<span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-700 border border-emerald-200">
+<svg aria-hidden="true" class="w-3.5 h-3.5 text-emerald-600" fill="none" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24">
+<path d="m4.5 12.75 6 6 9-13.5" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+              Registered
+            </span>
+</div>
+</article>
+</div>
+</section>
+<!-- Visual Section Divider -->
+<div class="max-w-4xl mx-auto my-12 relative flex items-center justify-center">
+<div aria-hidden="true" class="absolute inset-0 flex items-center">
+<div class="w-full border-t border-dashed border-slate-300"></div>
+</div>
+<div class="relative px-4 bg-[#F8FAFC]">
+<span class="text-xs uppercase tracking-wider font-semibold text-slate-400">Empty State Variation</span>
+</div>
+</div>
+<!-- Empty State Component View (Frame B) -->
+<section aria-labelledby="empty-state-heading" class="max-w-4xl mx-auto" data-purpose="empty-state-container">
+<div class="bg-white border-2 border-dashed border-slate-200 rounded-3xl p-10 lg:p-14 text-center flex flex-col items-center justify-center shadow-sm">
+<!-- Subtle Vector Icon -->
+<div class="w-16 h-16 rounded-2xl bg-brand-50 border border-brand-100 flex items-center justify-center text-brand-600 mb-5">
+<svg aria-hidden="true" class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="1.75" viewbox="0 0 24 24">
+<path d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</div>
+<!-- Primary Message -->
+<h2 class="text-2xl font-bold text-slate-900 tracking-tight mb-2" id="empty-state-heading">
+          No registrations yet
+        </h2>
+<!-- Helpful Line -->
+<p class="text-slate-500 max-w-md text-sm leading-relaxed mb-8">
+          You haven't signed up for any campus events yet. Explore upcoming workshops, hackathons, and tech meetups.
+        </p>
+<!-- CTA Action Button -->
+<a class="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-brand-600 text-white text-sm font-semibold shadow-sm hover:bg-brand-700 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:ring-offset-2 transition-all" href="#">
+          Explore Campus Events
+        </a>
+</div>
+</section>
+</main>
+<!-- END: MainContent -->
+<!-- BEGIN: MainFooter -->
+<footer class="mt-auto border-t border-slate-200 bg-white" data-purpose="site-footer">
+<div class="max-w-[1440px] mx-auto px-6 lg:px-12 py-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+<!-- Footer Copyright & Info -->
+<div class="flex items-center gap-2">
+<span class="font-semibold text-slate-700">CampusConnect</span>
+<span>•</span>
+<span>© 2024 University Student Portal. All rights reserved.</span>
+</div>
+<!-- Footer Policy Links -->
+<nav aria-label="Footer Navigation" class="flex items-center gap-6">
+<a class="hover:text-slate-900 transition-colors" href="#">Campus Guidelines</a>
+<a class="hover:text-slate-900 transition-colors" href="#">Help &amp; Support</a>
+<a class="hover:text-slate-900 transition-colors" href="#">Privacy</a>
+<a class="hover:text-slate-900 transition-colors" href="#">Terms</a>
+</nav>
+</div>
+</footer>
+<!-- END: MainFooter -->
+</body></html>
